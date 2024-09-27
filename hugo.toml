@@ -1,0 +1,76 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-cn'
+title = '文档'
+theme = 'hugo-book'
+
+[params]
+  # （可选，默认为 light）设置颜色主题：light（亮色）、dark（暗色）或 auto（自动）。
+  # 'auto' 主题会根据浏览器/操作系统偏好自动在暗色和亮色模式之间切换。
+  BookTheme = 'light'
+
+  # （可选，默认为 true）控制页面右侧目录的可见性。
+  # 可以通过 markup.tableOfContents 设置开始和结束级别。
+  # 您也可以在每页的 front matter 中指定此参数。
+  BookToC = true
+
+  # （可选，默认为 favicon.png）设置网站图标文件的路径。
+  # 如果图标是 /static/favicon.png，那么路径应该是 favicon.png。
+  # BookFavicon = 'favicon.png'
+
+  # （可选，默认无）为书籍设置一个标志的路径。
+  # 如果标志是 /static/logo.png，那么路径应该是 logo.png。
+  # BookLogo = 'logo.png'
+
+  # （可选，默认无）设置作为侧边菜单渲染的叶子捆绑包。
+  # 如果未指定，则使用文件结构和权重。
+  # BookMenuBundle = '/menu'
+
+  # （可选，默认为 docs）指定根页面以将子页面渲染为菜单。
+  # 页面解析使用 .GetPage 函数：https://gohugo.io/functions/getpage/
+  # 为了向后兼容，您可以设置 '*' 来渲染所有部分到菜单。作用与 '/' 相同。
+  BookSection = '*'
+
+  # 设置源代码仓库的位置。
+  # 用于“最后修改”和“编辑此页”的链接。
+  # BookRepo = 'https://github.com/alex-shpak/hugo-book'
+
+  # （可选，默认为 'commit'）指定页面最后一次修改提交的部分链接。
+  # 对于 'doc' 类型的页面，需要 'BookRepo' 参数。
+  # 值用于构造由 BookRepo/BookCommitPath/<commit-hash> 组成的 URL。
+  # GitHub 使用 'commit'，Bitbucket 使用 'commits'。
+  # BookCommitPath = 'commit'
+
+  # 启用 "编辑此页" 链接，针对 'doc' 类型的页面。
+  # 默认禁用。取消注释以启用。需要 'BookRepo' 参数。
+  # 编辑路径必须指向仓库的根目录。
+  # BookEditPath = 'edit/main/exampleSite'
+
+  # 配置页面上使用的日期格式。
+  # - 在 Git 信息中
+  # - 在博客文章中
+  BookDateFormat = '2024年1月1日'
+
+  # （可选，默认为 true）启用带有 flexsearch 的搜索功能。
+  # 索引是在运行时构建的，因此可能会减慢您的网站速度。
+  # 可以在 i18n 文件夹中按语言调整索引配置。
+  BookSearch = true
+
+  # （可选，默认为 true）启用页面上的评论模板。
+  # 默认情况下，partals/docs/comments.html 包含 Disqus 模板。
+  # 查看 https://gohugo.io/content-management/comments/#configure-disqus
+  # 可以通过页面 frontmatter 中相同的参数覆盖。
+  BookComments = false
+
+  # 注意！这是一个实验性功能，随时可能被移除或更改
+  # （可选，实验性，默认为 false）启用便携式链接和 Markdown 页面中的链接检查。
+  # 便携式链接旨在与文本编辑器一起工作，并允许您在不使用 {{< relref >}} 短代码的情况下编写 Markdown。
+  # 如果在 Markdown 中引用的页面不存在，主题将打印警告。
+  BookPortableLinks = true
+
+  # 注意！这是一个实验性功能，随时可能被移除或更改
+  # （可选，实验性，默认为 false）启用服务工作者，该工作者会缓存访问过的页面和资源以便离线使用。
+  BookServiceWorker = true
+
+  # 注意！这是一个实验性功能，随时可能被移除或更改
+  # （可选，实验性，默认为 false）仅当存在翻译时启用下拉菜单进行翻译。
+  BookTranslatedOnly = false
